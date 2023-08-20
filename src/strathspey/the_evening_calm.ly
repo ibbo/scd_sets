@@ -1,4 +1,4 @@
-\version "2.14.2-1"
+\version "2.22.0"
 
 #(define (lower-extension pitch chbass)
     "Return re-sized markup for pitch note name."
@@ -31,7 +31,7 @@
   \context { 
         \ChordNames
         chordNoteNamer = #lower-extension
-        \override ChordName #'font-size = #0.5
+        \override ChordName.font-size = #0.5
   }
 }
 
@@ -84,7 +84,7 @@
         e16 e8. fs e16 d4 e8. d16 | c4 e,16 c'8. fs,16 c'8. b16 a8. |
         g16 g8. fs16 g8. g, b16 d g8. | d g16 b d8. e4. e8 |
         d8 e16 fs g8. a16 b8. d,16 a'8. d,16 | g8. fs16 e d8. g4. \bar"||" \break
-        \partial 8 g,8 | b16 b8. d16 a8. g4 b16 d8. | e4 \times 2/3 {e8 d b} d4 g,8. a16 | b b8. d16 a8. g4 g16 d'8. | d4 c16 b8. a4 g8. a16 |
+        \partial 8 g,8 | b16 b8. d16 a8. g4 b16 d8. | e4 \tuplet 3/2 {e8 d b} d4 g,8. a16 | b b8. d16 a8. g4 g16 d'8. | d4 c16 b8. a4 g8. a16 |
         b16 b8. d16 a8. g4 b16 d8. g16 g8. b g16 e4( e8.) d16 | d8. d,16 c' b8. c4 b16 a8. | g fs16 e d8. g4 \bar":|."
       }
       \new ChordNames {
@@ -112,22 +112,22 @@
         \clef treble
         \key d \major
         \time 4/4
-        \partial 4 \times 2/3 {a8 b cs} |
+        \partial 4 \tuplet 3/2 {a8 b cs} |
         d8. e16 d8. b16 cs4 fs,16 a8. |
         b8. a16 g8. b16 a4 fs16 d8. |\noBreak
-        g8. b16 \times 2/3{g8 fs e} fs8. a16 \times 2/3 {fs8 e d} |
-        e8. gs16 b d8. cs4 \times 2/3 {a8 b cs} |\break
+        g8. b16 \tuplet 3/2{g8 fs e} fs8. a16 \tuplet 3/2 {fs8 e d} |
+        e8. gs16 b d8. cs4 \tuplet 3/2 {a8 b cs} |\break
         d8. e16 d8. b16 cs4 fs,16 a8. |
         b8. a16 g8. b16 a4 fs16 d8. |
-        g8. b16 \times 2/3{g8 fs e} fs8. a16 \times 2/3 {fs8 e d} |
+        g8. b16 \tuplet 3/2{g8 fs e} fs8. a16 \tuplet 3/2 {fs8 e d} |
         e8. g16 fs e8. d4 \bar"||"\break
         d'8. e16 | fs8. g16 fs8. d16 e4 cs16 e8. |
         d8. e16 d8. b16 cs4 a16 fs8. |
         g8. b16 e8. g,16 fs8. a16 d8. fs,16 |
-        \times 2/3 {e8 gs b} e8. d16 cs a8. d e16 |\break
+        \tuplet 3/2 {e8 gs b} e8. d16 cs a8. d e16 |\break
         fs8. g16 fs8. d16 e8. d16 cs e8. |
         d8. e16 d8. b16 cs8. b16 a cs8. |
-        b8. g16 \times 2/3 {b8 a g} a8. fs16 \times 2/3 {a8 g fs} |
+        b8. g16 \tuplet 3/2 {b8 a g} a8. fs16 \tuplet 3/2 {a8 g fs} |
         e8. g16 fs e8. d4 \bar":|."
       }
       \new ChordNames{

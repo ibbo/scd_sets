@@ -1,4 +1,4 @@
-\version "2.14.2-1"
+\version "2.22.0"
 
 #(define (lower-extension pitch chbass)
     "Return re-sized markup for pitch note name."
@@ -31,7 +31,7 @@
   \context { 
         \ChordNames
         chordNoteNamer = #lower-extension
-        \override ChordName #'font-size = #0.5
+        \override ChordName.font-size = #0.5
   }
 }
 

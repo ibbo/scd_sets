@@ -1,4 +1,4 @@
-\version "2.14.2-1"
+\version "2.22.0"
 
 #(define (lower-extension pitch chbass)
     "Return re-sized markup for pitch note name."
@@ -31,7 +31,7 @@
   \context { 
         \ChordNames
         chordNoteNamer = #lower-extension
-        \override ChordName #'font-size = #0.5
+        \override ChordName.font-size = #0.5
   }
 }
 
@@ -46,7 +46,7 @@
         \time 6/8
         \partial 8 b8 |
         a b a a fs a | d4 e8 g4 fs8 | e4 a,8 a g fs | g4. g8 fs g |
-        a b a a fs a | d4 e8 g4 fs8 | e4 a,8 a b cs | d4. d4 \bar":|." \break
+        a b a a fs a | d4 e8 g4 fs8 | e4 a,8 a b cs | d4. d4 \bar":|.|:" \break
         e8 | fs4 fs8 d e fs | g4 fs8 e a g | fs4 d8 a4 fs8 | g4. g8 fs g |
         a b a a fs a | d4 e8 g4 fs8 | e4 a,8 a b cs | d4. d4 \bar":|."
       }
@@ -77,8 +77,8 @@
         \time 6/8
         \partial 4 cs8 d |
         e cs a e4 a8 | fs4 a8 e4 a8 | e8 fs e e4 e'8 | d4 cs8 b4 a8 | \break
-        e'8 cs a e4 a8 | fs4 a 8 e4 cs'8 | d4 fs8 e cs a | b4. a8 \bar":|." \break
-        cs d | e cs a a cs e | fs gs fs fs gs a | e cs a a cs a | b gs e e cs' d |
+        e'8 cs a e4 a8 | fs4 a 8 e4 cs'8 | d4 fs8 e cs a | b4. a8 \bar":|.|:" \break
+        cs d | e cs a a cs e | fs gs fs fs gs a | e cs a a cs a | b gs e e cs' d | \break
         e cs a a cs e | a gs fs e d cs | d fs a e cs a | b4. a8 \bar":|."
       }
       \new ChordNames{
@@ -108,8 +108,8 @@
         \time 6/8
         \partial 4 d cs |
         b4 e,8 e fs e | b' a b d4 b8 | a4 d,8 d e d | fs d fs a d cs | \break
-        b4 e,8 e fs e | b' a b d4 e8 | d b d a fs d | e fs e e \bar":|." \break
-        g b | e fs e e d b | e fs g g fs e | d e d d a fs | d' cs d fs e d |
+        b4 e,8 e fs e | b' a b d4 e8 | d b d a fs d | e fs e e4 \bar":|." \break
+        b'8 | e fs e e d b | e fs g g fs e | d e d d a fs | d' cs d fs e d | \break
         e fs e e d b | e fs g fs4 e8 | d b d a fs d | e fs e e \bar":|."
       }
       \new ChordNames{

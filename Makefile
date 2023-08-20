@@ -19,4 +19,10 @@ out/%.pdf: src/%.ly
 clean:
 	rm -rf out
 
-.PHONY: all clean
+update-sources:
+	for file in $(SOURCES); do \
+		convert-ly -e $$file; \
+		done
+
+
+.PHONY: all clean update-sources

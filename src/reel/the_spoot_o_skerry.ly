@@ -1,4 +1,4 @@
-\version "2.14.2-1"
+\version "2.22.0"
 
 #(define (lower-extension pitch chbass)
     "Return re-sized markup for pitch note name."
@@ -31,7 +31,7 @@
   \context { 
         \ChordNames
         chordNoteNamer = #lower-extension
-        \override ChordName #'font-size = #0.5
+        \override ChordName.font-size = #0.5
   }
 }
 
@@ -111,7 +111,7 @@
         \clef treble
         \key a \major
         \time 4/4
-        \partial 4 \times 2/3 {e8 fs gs} | a4 a, a8 cs b a | e4 a a8 cs b a | fs4 b b8 cs b a | gs a b cs d e fs gs | \break
+        \partial 4 \tuplet 3/2 {e8 fs gs} | a4 a, a8 cs b a | e4 a a8 cs b a | fs4 b b8 cs b a | gs a b cs d e fs gs | \break
         a4 a, a8 cs b a | e4 a a8 cs b a | gs a b cs d e fs gs | a e cs e a,4 \bar":|.|:" \break
         cs8 b | a4 a' a, a' | a, a8 b cs b a4 | e e' e, e' | e, b'8 cs d cs b4 | \break
         a a' a, a' | a, a8 b cs b a4 | e b'8 cs e d cs b | a4 cs a \bar":|."
