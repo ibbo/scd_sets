@@ -69,7 +69,7 @@
         \chordmode{
           \partial 4 s4 |
           d1 | d4 a:7 d2 | g d | e:7 a:7 |
-          d1 | d4 a:7 d2 | g4 d a2:7 | d1 |
+          d1 | d4 a:7 d2 | g2 d4 a:7 | d1 |
           d4 a:7 d2 | g2 d | g d | e:7 a:7 |
           d4 a:7 d2 | g2 d | g d4 a:7 | d1 |
           d1 | d4 a:7 d2 | g2 d4 a:7 | d2. |
@@ -123,8 +123,8 @@
       \key e \minor
       \time 4/4
       \repeat volta 2 {
-      \bar".|:" b16 e,8. g fs16 e4 d8 fs16 g | a b8. a fs16 d4 d8 e16 fs |
-      g8. e16 fs8. d16 e d'8. d fs16 | g8. e16 fs e d8 \acciaccatura b8 e4 |
+      \bar".|:" b16 e,8. g fs16 e4 e8 fs16 g | a b8. a fs16 d4 d8 e16 fs |
+      g8. e16 fs8. d16 e e'8. e fs16 | g8. e16 fs e d8 \acciaccatura b8 e4 |
       }
 
       \alternative{
