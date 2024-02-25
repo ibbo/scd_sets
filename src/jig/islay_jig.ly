@@ -36,7 +36,7 @@
 }
 
 % Islay Jig
-\score {
+islayJig = \score {
     \relative c''{
       <<
         {
@@ -64,7 +64,7 @@
     }
 }
 
-\score {
+hasteToTheWedding = \score {
     \relative c'' {
       <<
         {
@@ -92,41 +92,36 @@
     }
 }
 
-\score {
-  \relative c'' {
+priceOfAPig = \score {
+  \relative c''{
     <<
-      {
-        \clef treble
-        \key a \minor
-        \time 6/8
-        \partial 8 \bar".|:" e,8 |
-        e a a a b b | b c c c d d | d e e e d c | b g g a e e |
-        e a a a b b | b c c c d d | d e e e d c | b a g a4 r8 \bar":|." | \break
-        \repeat volta 2 {
-          <a' c,>4. a8 g e | g e e d e g | <a c,>4. a8 g e | g, a b d e g |
-          <a c,>4. a8 g e | g e e d e g | a4 e8 g4 e8 | 
-        }
-
-        \alternative {
-          {d e d d e g \bar":|."}
-          {d e d a4 \bar":|."}
-        }
-
+    {
+      \clef treble
+      \key a \minor
+      \time 6/8
+      e8. d16 e8 a,8. a16 a8 | b16 a8. b8 g8. g16 g8 | e'8. e16 e8 e8. d16 b8 | d8. e16 f8 g8. f16 a8 |
+      e8. d16 e8 a,8. a16 a8 | b16 a8. b8 g8. g16 g8 | e'8. e16 e8 e8. d16 b8 | b8. a16 a8 a4. \bar":|.|:" \break
+      e'8. f16 g8 a8. e16 e8 | e8. f16 g8 a8. e16 a8 | a8. g16 e8 e8. d16 b8 | d8. e16 f8 g8. f16 a8 |
+      e8. d16 e8 a,8. a16 a8 | b16 a8. b8 g8. b16 d8 | e8. e16 e8 e8. d16 b8 | b8. a16 a8 a4. \bar":|."
+    }
+    \new ChordNames {
+      \chordmode {
+        a2.:m | g | a:m | d
+        a:m | g | a4.:m e:m | a2.:m
+        e4.:m a:m | e:m a:m | a2.:m | d4. g
+        a2.:m | g | a4.:m e:m7 | a2.:m
       }
-      \new ChordNames{
-        \chordmode{
-          \partial 8 s8 |
-          a2.:m | s | s | g4. a:m |
-          a2.:m | s | s | g4. a:m |
-          a2.:m | c4. g | a2.:m | g4. e:m |
-          a2.:m | c4. g | a:m e:m | g2. | g4. a4:m |
-        }
-      }
+    }
     >>
   }
-
   \header {
-    piece = "The Long Water"
-    opus  = "Sandy Brechin"
+    piece = "The Price of a Pig"
+    opus = "Traditional"
   }
 }
+
+\priceOfAPig
+
+\islayJig
+
+\hasteToTheWedding
