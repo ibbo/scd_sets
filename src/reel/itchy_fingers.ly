@@ -11,9 +11,9 @@
             \time 4/4
             \partial 4 cs8 d |
             e4 e8 fs e a, cs e | fs a, d fs e4 cs8 e | e4 e8 fs e a, cs e | cs a d cs b4 cs8 d |
-            e4 e8 fs e a, cs e | fs a, d fs e4 cs8 e | d cs cs b b fs e b | cs4 a a \bar":|.|:" \break
+            e4 e8 fs e a, cs e | fs a, d fs e4 cs8 e | d cs cs b b fs' e b | cs4 a a \bar":|.|:" \break
             \repeat volta 2 {
-                cs'8 e | a4 a,8 a' cs, a' a, a' | fs a d, a' e4 cs8 e | a4 a,8 a' cs, a' a, a' | cs, a d cs b4 
+                cs8 e | a4 a,8 a' cs, a' a, a' | fs a d, a' e4 cs8 e | a4 a,8 a' cs, a' a, a' | cs, a d cs b4 
             }
 
             \alternative {
