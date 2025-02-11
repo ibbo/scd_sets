@@ -37,132 +37,130 @@
 
 PartPOneVoiceOne =  \relative b' {
     \clef "treble" \time 6/8 \key g \major | % 1
-    \partial 8 \stemDown b8 \repeat volta 2 {
+    \partial 8  b8 \repeat volta 2 {
         | % 2
-        \stemUp e,4 \stemUp fs8 \stemUp g4 \stemUp a8 | % 3
-        \stemDown b4 \stemDown c8 \stemDown d4 \stemDown b8 | % 4
-        \stemUp g4 \stemUp g8 \stemDown d'4 \stemDown b8 | % 5
-        \stemUp a8 [ \stemUp fs8 \stemUp a8 ] \stemUp d,4 \stemUp fs8
-        \break | % 6
-        \stemUp e4 \stemUp fs8 \stemUp g4 \stemUp a8 | % 7
-        \stemDown b8 [ \stemDown c8 \stemDown b8 ] \stemDown g'4
-        \stemDown fs8 | % 8
-        \stemDown e8 [ \stemDown d8 \stemDown c8 ] \stemDown b8 [
-        \stemDown cs8 \stemDown ds8 ] | % 9
-        \stemDown e4. \stemDown e4 \stemDown b8 }
+         e,4  fs8  g4  a8 | % 3
+         b4  c8  d4  b8 | % 4
+         g4  g8  d'4  b8 | % 5
+         a8 [  fs8  a8 ]  d,4  fs8 | % 6
+         e4  fs8  g4  a8 | % 7
+         b8 [  c8  b8 ]  g'4 fs8 | % 8
+         e8 [  d8  c8 ]  b8 [
+         cs8  ds8 ] | % 9
+         e4.  e4  b8 }
     \break \repeat volta 2 {
         | \barNumberCheck #10
-        \stemDown e4 \stemDown fs8 \stemDown g4 \stemDown e8 | % 11
-        \stemDown d4 \stemDown b8 \stemDown d4 \stemDown b8 | % 12
-        \stemUp g8 [ \stemUp a8 \stemUp g8 ] \stemDown d'4 \stemDown b8
+         e4  fs8  g4  e8 | % 11
+         d4  b8  d4  b8 | % 12
+         g8 [  a8  g8 ]  d'4  b8
         | % 13
-        \stemUp a8 [ \stemUp fs8 \stemUp a8 ] \stemUp d,8 [ \stemUp g8
-        \stemUp fs8 ] \break | % 14
-        \stemUp e8 [ \stemUp fs8 \stemUp e8 ] \stemUp g4 \stemUp a8 | % 15
-        \stemDown b8 [ \stemDown c8 \stemDown b8 ] \stemDown g'4
-        \stemDown fs8 | % 16
-        \stemDown e8 [ \stemDown d8 \stemDown c8 ] \stemDown b8 [
-        \stemDown cs8 \stemDown ds8 ] | % 17
-        \stemDown e4. \stemDown e4 }
+         a8 [  fs8  a8 ]  d,8 [  g8
+         fs8 ] \break | % 14
+         e8 [  fs8  e8 ]  g4  a8 | % 15
+         b8 [  c8  b8 ]  g'4
+         fs8 | % 16
+         e8 [  d8  c8 ]  b8 [
+         cs8  ds8 ] | % 17
+         e4.  e4 }
     s8 \break | % 18
-    \key d \major \stemUp a,8 s8*5 | % 19
-    \stemDown d4 \stemDown d8 \stemDown d8 [ \stemDown cs8 \stemDown d8
+    \key d \major  a,8 s8*5 | % 19
+     d4  d8  d8 [  cs8  d8
     ] | \barNumberCheck #20
-    \stemDown b4 \stemDown d8 \stemDown b4 \stemUp a8 | % 21
-    \stemDown fs'4 \stemDown fs8 \stemDown fs8 [ \stemDown e8
-    \stemDown fs8 ] | % 22
-    \stemDown g4. -\f \stemDown b,4. \break | % 23
-    \stemDown cs4 \stemDown cs8 \stemDown cs8 [ \stemDown b8
-    \stemDown cs8 ] | % 24
-    \stemDown e4 \stemDown cs8 \stemDown b4 \stemUp a8 | % 25
-    \stemUp fs8 [ \stemUp a8 \stemUp a8 ] \stemUp e8 [ \stemUp g8
-    \stemUp g8 ] | % 26
-    \stemUp fs4. \stemUp fs4 \stemUp a8 \break | % 27
-    \stemDown d4 \stemDown d8 \stemDown d8 [ \stemDown cs8 \stemDown d8
+     b4  d8  b4  a8 | % 21
+     fs'4  fs8  fs8 [  e8
+     fs8 ] | % 22
+     g4. -\f  b,4. \break | % 23
+     cs4  cs8  cs8 [  b8
+     cs8 ] | % 24
+     e4  cs8  b4  a8 | % 25
+     fs8 [  a8  a8 ]  e8 [  g8
+     g8 ] | % 26
+     fs4.  fs4  a8 \break | % 27
+     d4  d8  d8 [  cs8  d8
     ] | % 28
-    \stemDown b4 \stemDown d8 \stemDown b4 \stemUp a8 | % 29
-    \stemDown fs'4 \stemDown fs8 \stemDown fs8 [ \stemDown e8
-    \stemDown fs8 ] | \barNumberCheck #30
-    \stemDown g4. \stemDown b,4. \break | % 31
-    \stemDown cs4 \stemDown cs8 \stemDown cs8 [ \stemDown b8
-    \stemDown cs8 ] | % 32
-    \stemDown e4 \stemDown cs8 \stemDown b4 \stemUp a8 | % 33
-    \stemUp fs8 [ \stemUp a8 \stemUp a8 ] \stemUp g8 [ \stemUp cs,8
-    \stemUp cs8 ] | % 34
-    \stemUp d4. \stemUp d4 \stemUp a'8 \break | % 35
-    \stemDown d8 [ \stemDown a8 \stemDown d8 ] \stemDown fs8 [
-    \stemDown d8 \stemDown fs8 ] | % 36
-    \stemDown a4 \stemDown fs8 \stemDown d4 \stemUp a8 | % 37
-    \stemDown a'4 \stemDown a8 \stemDown a8 [ \stemDown g8 \stemDown e8
+     b4  d8  b4  a8 | % 29
+     fs'4  fs8  fs8 [  e8
+     fs8 ] | \barNumberCheck #30
+     g4.  b,4. \break | % 31
+     cs4  cs8  cs8 [  b8
+     cs8 ] | % 32
+     e4  cs8  b4  a8 | % 33
+     fs8 [  a8  a8 ]  g8 [  cs,8
+     cs8 ] | % 34
+     d4.  d4  a'8 \break | % 35
+     d8 [  a8  d8 ]  fs8 [
+     d8  fs8 ] | % 36
+     a4  fs8  d4  a8 | % 37
+     a'4  a8  a8 [  g8  e8
     ] | % 38
-    \stemDown b4. \stemDown b4 \stemDown c8 \break | % 39
-    \stemDown cs4 \stemDown cs8 \stemDown cs8 [ \stemDown b8
-    \stemDown cs8 ] | \barNumberCheck #40
-    \stemDown e4 \stemDown cs8 \stemDown b4 \stemUp a8 | % 41
-    \stemUp fs8 [ \stemUp a8 \stemUp a8 ] \stemUp e8 [ \stemUp g8
-    \stemUp g8 ] | % 42
-    \stemUp fs4. \stemUp fs4 \stemUp a8 \break | % 43
-    \stemDown d8 [ \stemDown a8 \stemDown d8 ] \stemDown fs8 [
-    \stemDown d8 \stemDown fs8 ] | % 44
-    \stemDown a4 \stemDown fs8 \stemDown d4 \stemUp a8 | % 45
-    \stemDown a'4 \stemDown a8 \stemDown a8 [ \stemDown g8 \stemDown e8
+     b4.  b4  c8 \break | % 39
+     cs4  cs8  cs8 [  b8
+     cs8 ] | \barNumberCheck #40
+     e4  cs8  b4  a8 | % 41
+     fs8 [  a8  a8 ]  e8 [  g8
+     g8 ] | % 42
+     fs4.  fs4  a8 \break | % 43
+     d8 [  a8  d8 ]  fs8 [
+     d8  fs8 ] | % 44
+     a4  fs8  d4  a8 | % 45
+     a'4  a8  a8 [  g8  e8
     ] | % 46
-    \stemDown b4. \stemDown b4 \stemDown c8 \break | % 47
-    \stemDown cs4 \stemDown cs8 \stemDown cs8 [ \stemDown b8
-    \stemDown cs8 ] | % 48
-    \stemDown e4 \stemDown cs8 \stemDown b4 \stemUp a8 | % 49
-    \stemUp fs8 [ \stemUp a8 \stemUp a8 ] \stemUp g8 [ \stemUp cs,8
-    \stemUp cs8 ] | \barNumberCheck #50
-    \stemUp d4. \stemUp d4. | % 51
-    \key g \major \stemUp d8 s8*5 \repeat volta 2 {
+     b4.  b4  c8 \break | % 47
+     cs4  cs8  cs8 [  b8
+     cs8 ] | % 48
+     e4  cs8  b4  a8 | % 49
+     fs8 [  a8  a8 ]  g8 [  cs,8
+     cs8 ] | \barNumberCheck #50
+     d4.  d4. | % 51
+    \key g \major  d8 s8*5 \repeat volta 2 {
         | % 52
-        \stemDown b'4 \stemDown b8 \stemDown b4 \stemUp d,8 | % 53
-        \stemDown b'4 \stemDown b8 \stemDown b4 \stemDown d8 | % 54
-        \stemDown g8 [ \stemDown fs8 \stemDown e8 ] \stemDown d8 [
-        \stemDown c8 \stemDown b8 ] | % 55
-        \stemDown d4 \stemDown c8 \stemUp a4 \stemDown b8 \break | % 56
-        \stemDown c4 \stemDown c8 \stemDown c4 -\f \stemUp d,8 | % 57
-        \stemDown c'4 \stemDown c8 \stemDown c4 -\f \stemDown e8 | % 58
-        \stemDown e8 [ \stemDown d8 \stemDown b8 ] \stemDown d8 [
-        \stemDown c8 \stemDown a8 ] | % 59
-        \stemUp g4. \stemUp g4 \stemDown d'8 }
+         b'4  b8  b4  d,8 | % 53
+         b'4  b8  b4  d8 | % 54
+         g8 [  fs8  e8 ]  d8 [
+         c8  b8 ] | % 55
+         d4  c8  a4  b8 \break | % 56
+         c4  c8  c4 -\f  d,8 | % 57
+         c'4  c8  c4 -\f  e8 | % 58
+         e8 [  d8  b8 ]  d8 [
+         c8  a8 ] | % 59
+         g4.  g4  d'8 }
     \break \repeat volta 2 {
         | \barNumberCheck #60
-        \stemDown g4 \stemDown g8 \stemDown g4 \stemDown d8 | % 61
-        \stemDown b4 \stemDown b8 \stemDown b4. -\f | % 62
-        \stemDown b4. \stemDown d8 [ \stemDown c8 \stemDown b8 ] | % 63
-        \stemDown d4 \stemDown c8 \stemUp a4 \stemDown c8 \break | % 64
-        \stemDown fs4 \stemDown fs8 \stemDown fs4 \stemDown e8 | % 65
-        \stemDown c4 \stemDown c8 \stemDown c4 \stemDown e8 | % 66
-        \stemDown e8 [ \stemDown d8 \stemDown b8 ] \stemDown d8 [
-        \stemDown c8 \stemDown a8 ] | % 67
-        \stemUp g4. \stemUp g4. }
+         g4  g8  g4  d8 | % 61
+         b4  b8  b4. -\f | % 62
+         b4.  d8 [  c8  b8 ] | % 63
+         d4  c8  a4  c8 \break | % 64
+         fs4  fs8  fs4  e8 | % 65
+         c4  c8  c4  e8 | % 66
+         e8 [  d8  b8 ]  d8 [
+         c8  a8 ] | % 67
+         g4.  g4. }
     \break | % 68
-    \key a \major \stemUp fs8 s8*5 \repeat volta 2 {
+    \key a \major  fs8 s8*5 \repeat volta 2 {
         | % 69
-        \stemUp e4 \stemUp e8 \stemUp e8 [ \stemUp cs8 \stemUp e8 ] |
+         e4  e8  e8 [  cs8  e8 ] |
         \barNumberCheck #70
-        \stemUp fs4 \stemUp e8 \stemUp e4 \stemUp a8 | % 71
-        \stemDown cs4 \stemDown cs8 \stemDown e4 \stemDown cs8 | % 72
-        \stemDown b4 \stemUp a8 \stemUp fs8 [ \stemUp gis8 \stemUp a8 ]
+         fs4  e8  e4  a8 | % 71
+         cs4  cs8  e4  cs8 | % 72
+         b4  a8  fs8 [  gis8  a8 ]
         \break | % 73
-        \stemUp e4 \stemUp e8 \stemUp e8 [ \stemUp cs8 \stemUp e8 ] | % 74
-        \stemUp fs4 \stemUp e8 \stemUp e4 \stemUp a8 | % 75
-        \stemDown cs8 [ \stemDown cs8 \stemDown cs8 ] \stemDown e4
-        \stemDown cs8 | % 76
-        \stemDown b4. \stemUp a4 \stemDown d8 }
+         e4  e8  e8 [  cs8  e8 ] | % 74
+         fs4  e8  e4  a8 | % 75
+         cs8 [  cs8  cs8 ]  e4
+         cs8 | % 76
+         b4.  a4  d8 }
     \break \repeat volta 2 {
         | % 77
-        \stemDown cs4 \stemDown b8 -- \stemDown e4 \stemDown cs8 | % 78
-        \stemDown b4 \stemUp a8 \stemUp fs4 \stemDown d'8 | % 79
-        \stemDown cs4 \stemDown b8 \stemDown e4 \stemDown cs8 |
+         cs4  b8 --  e4  cs8 | % 78
+         b4  a8  fs4  d'8 | % 79
+         cs4  b8  e4  cs8 |
         \barNumberCheck #80
-        \stemDown b4 \stemUp a8 \stemUp fs8 [ \stemUp gis8 \stemUp a8 ]
+         b4  a8  fs8 [  gis8  a8 ]
         \break | % 81
-        \stemUp e4 \stemUp e8 \stemUp e8 [ \stemUp cs8 \stemUp e8 ] | % 82
-        \stemUp fs4 \stemUp e8 \stemUp e4 \stemUp a8 | % 83
-        \stemDown cs4 \stemDown cs8 \stemDown e4 \stemDown cs8 | % 84
-        \stemDown b4. \stemUp a4. }
+         e4  e8  e8 [  cs8  e8 ] | % 82
+         fs4  e8  e4  a8 | % 83
+         cs4  cs8  e4  cs8 | % 84
+         b4.  a4. }
     }
 
 PartPOneVoiceOneChords =  \chordmode {
