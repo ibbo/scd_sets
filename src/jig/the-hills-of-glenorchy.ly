@@ -35,6 +35,33 @@
   }
 }
 
-\include "teribus-tune.ly"
-\include "the-ton.ly"
-\include "greenwood-side.ly"
+% The Hills of Glenorchy
+\score{
+  \relative c''{
+    <<
+      {
+        \clef treble
+        \key e \minor
+        \time 6/8
+        \partial 4 d cs |
+        b4 e,8 e fs e | b' a b d4 b8 | a4 d,8 d e d | fs d fs a d cs | \break
+        b4 e,8 e fs e | b' a b d4 e8 | d b d a fs d | e fs e e4 \bar":|." \break
+        b'8 | e fs e e d b | e fs g g fs e | d e d d a fs | d' cs d fs e d | \break
+        e fs e e d b | e fs g fs4 e8 | d b d a fs d | e fs e e \bar":|."
+      }
+      \new ChordNames{
+        \chordmode{
+          \partial 4 s4 |
+          e2.:m | s | d | s |
+          e2.:m | s | g4. d | e2.:m |
+          e2.:m | s | d | s |
+          e2.:m | s | g4. d | e2:m |
+        }
+      }
+    >>
+  }
+  \header{
+    piece = "The Hills of Glenorchy"
+    opus = "Traditional"
+  }
+}

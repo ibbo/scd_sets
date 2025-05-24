@@ -35,6 +35,24 @@
   }
 }
 
-\include "teribus-tune.ly"
-\include "the-ton.ly"
-\include "greenwood-side.ly"
+\score {
+    \relative c'' {
+        <<
+        {
+        \clef treble
+        \key g \major
+        \time 4/4
+        d8 b b4 d8 b g b | d b b4 a8 b c a | d b b4 d8 b g b | \tuplet 3/2 {c b a} b g a b c a \bar":|.|:" |
+        g4 b8 g d g b g | g4 b8 g a b c a | g4 b8 g d g b g | \tuplet 3/2 {c b a} b8 g a b c a \bar":|."
+        }
+        \chords {
+            g1 | g2 d:7 | g1 | c2 d:7 |
+            g1 | g2 d:7 | g1 | c2 d:7 |
+        }
+        >>
+    }
+    \header {
+        piece = "The Blacksmith's Daughter"
+        opus = "Traditional"
+    }
+}

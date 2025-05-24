@@ -35,6 +35,34 @@
   }
 }
 
-\include "teribus-tune.ly"
-\include "the-ton.ly"
-\include "greenwood-side.ly"
+
+% Drumdelgie
+\score{
+  \relative c''{
+    <<
+      {
+        \clef treble
+        \key d \major
+        \time 6/8
+        \partial 8 b8 |
+        a b a a fs a | d4 e8 g4 fs8 | e4 a,8 a g fs | g4. g8 fs g |
+        a b a a fs a | d4 e8 g4 fs8 | e4 a,8 a b cs | d4. d4 \bar":|.|:" \break
+        e8 | fs4 fs8 d e fs | g4 fs8 e a g | fs4 d8 a4 fs8 | g4. g8 fs g |
+        a b a a fs a | d4 e8 g4 fs8 | e4 a,8 a b cs | d4. d4 \bar":|."
+      }
+      \new ChordNames{
+        \chordmode{
+          \partial 8 s8 |
+          d2. | d4. g | a:7 d | e:m a:7 |
+          d2. | d4. g | a2.:7 | d |
+          d4. b:m | e:m a:7 | d2. | e4.:m a:7 |
+          d2. | d4. g | a2.:7 | d4. s4 |
+        }
+      }
+    >>
+  }
+  \header{
+    piece = "Drumdelgie"
+    opus = "Traditional"
+  }
+}

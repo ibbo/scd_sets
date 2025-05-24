@@ -35,6 +35,31 @@
   }
 }
 
-\include "teribus-tune.ly"
-\include "the-ton.ly"
-\include "greenwood-side.ly"
+% The Breakdown
+\score{
+  \relative c''{
+    <<
+      {
+        \clef treble
+        \key a \major
+        \time 4/4
+        \partial 4 \tuplet 3/2 {e8 fs gs} | a4 a, a8 cs b a | e4 a a8 cs b a | fs4 b b8 cs b a | gs a b cs d e fs gs | \break
+        a4 a, a8 cs b a | e4 a a8 cs b a | gs a b cs d e fs gs | a e cs e a,4 \bar":|.|:" \break
+        cs8 b | a4 a' a, a' | a, a8 b cs b a4 | e e' e, e' | e, b'8 cs d cs b4 | \break
+        a a' a, a' | a, a8 b cs b a4 | e b'8 cs e d cs b | a4 cs a \bar":|."
+      }
+      \new ChordNames{
+        \chordmode{
+          \partial 4 s4 |
+          a1 | s | b:m | e:7 |
+          a | s | e:7 | a |
+          a | s | e:7 | s |
+          a | s | e:7 | a2. |
+        }
+      }
+    >>
+  }
+  \header{
+    piece = "The Breakdown"
+  }
+}
