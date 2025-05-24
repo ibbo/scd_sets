@@ -35,6 +35,31 @@
   }
 }
 
-\include "teribus-tune.ly"
-\include "the-ton.ly"
-\include "greenwood-side.ly"
+\score {
+    \relative c'' {
+        <<
+        {
+        \clef treble
+        \key e \minor
+        \time 6/8
+        \bar".|:" e,4 e'8 b g e | d4 d'8 a fs d | e4 e'8 b g e | b' a g e'4 fs8 |
+        g fs e d c b | a b g fs e d | e fs g a b c | b g fs e4. \bar":|.|:" |
+        e'8 b e g fs e | d a d g a g | e b e g fs e | fs a fs g b g |
+        fs a fs g fs e | d c b a g fs | e fs g a b c | b g fs e4. \bar":|."
+        }
+        \new ChordNames {
+            \chordmode {
+                e2.:m | d | e:m | b4.:m e:m |
+                g2. | a4.:m d | e:m a:m | b:m e:m |
+                e2.:m | d4. b:m7 | e2.:m | b4.:m e:m |
+                d2. | g | e4.:m a:m | b:m e:m |
+            }
+        }
+        >>
+    }
+    
+    \header {
+        piece = "The Trip to Sligo"
+        opus = "John Anderson"
+    }
+}

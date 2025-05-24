@@ -35,6 +35,34 @@
   }
 }
 
-\include "teribus-tune.ly"
-\include "the-ton.ly"
-\include "greenwood-side.ly"
+
+% My Love She's but a Lassie Yet
+\score{
+  \relative c''{
+    <<
+      {
+        \clef treble
+        \key d \major
+        \time 4/4
+        \partial 4 d8 cs |
+        d4 d, fs a | d d, d d'8 cs | d4 d, fs a | e' e, e d'8 cs |
+        d4 d, fs a | b g' fs e | d8 cs b a b cs d e | fs4 d d \bar":|." \break
+        fs8 g | a4. fs8 g4 e | fs d d fs8 g | a4. fs8 g fs g a | b4 e, e fs8 g |
+        a4 fs g e | fs d e4. cs8 | d cs b a b cs d e | fs4 d d \bar":|."
+      }
+      \new ChordNames{
+        \chordmode{
+          \partial 4 s4 |
+          d1 | s | s | e2:m a:7 |
+          d1 | g | a:7 | d |
+          d2 a:7 | d1 | d2 g | e:m a:7 |
+          d g | d a:7 | g a:7 | d2. |
+        }
+      }
+    >>
+  }
+  \header{
+    piece = "My Love she's but a Lassie Yet"
+    opus = "Traditional"
+  }
+}

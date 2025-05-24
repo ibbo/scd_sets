@@ -35,6 +35,34 @@
   }
 }
 
-\include "teribus-tune.ly"
-\include "the-ton.ly"
-\include "greenwood-side.ly"
+% Davy Davy Knick Knack
+\score{
+  \relative c''{
+    <<
+      {
+        \clef treble
+        \key g \major
+        \time 4/4
+        \partial 4 b8 a |
+        g fs g a b4 b | g8 fs g a b4 b | d8 c b c a4 a | d8 c b c a4 a |
+        g8 fs g a b4 b | g8 fs g a b4 b | d8 c b c a c b a | g4 b g \bar":|." \break
+        b8 c | d4. c8 b4 d | g g d2 | d8 c b c a4 a | d8 c b c a4 a |
+        d4. c8 b4 d | g g d2 | d8 c b c a c b a | g4 b g \bar":|."
+
+      }
+      \new ChordNames{
+        \chordmode{
+          \partial 4 s4 |
+          g1 | s | d:7 | s |
+          g1 | s | d:7 | g |
+          g1 | s | d:7 | s |
+          g1 | s | d:7 | g2. |
+        }
+      }
+    >>
+  }
+  \header{
+    piece = "Davy Davy Knick Knack"
+    opus = "Traditional"
+  }
+}
