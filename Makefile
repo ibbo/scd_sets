@@ -13,7 +13,7 @@ all: $(OUTPUTS)
 # Rule to convert .ly files to .pdf
 out/%.pdf: src/%.ly
 	mkdir -p $(@D)  # Ensure the output directory exists
-	lilypond --output=$(dir $@) $<
+	-lilypond --output=$(dir $@) $< || echo "Skipping $< due to an error"
 
 # Rule to clean (delete) all generated files
 clean:
