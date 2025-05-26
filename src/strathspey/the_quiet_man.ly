@@ -42,12 +42,12 @@
             \clef treble
             \key d \minor
             \time 4/4
-            \bar ".|:" d8. f16 e d8. a4 \tuplet 3/2 { a8 bf b } | c4 e8. d16 c8. e16 g e8. |
+            \repeat volta 2 {
+            d8. f16 e d8. a4 \tuplet 3/2 { a8 bf b } | c4 e8. d16 c8. e16 g e8. |
             f8. d16 e8. c16 d d'8. d bf16 | 
             \tuplet 3/2 { a8 bf a } \tuplet 3/2 { g f e } \tuplet 3/2 { f e d }  \tuplet 3/2 { e d c } |
             d8. f16 e d8. a4 \tuplet 3/2 { a8 bf b } | c4 e8. d16 c8. e16 g e8. |
-            f d16 e8. c16 d d'8. d bf16 | \tuplet 3/2 { a8 bf a } \tuplet 3/2 { g f e } f16 d8. d8. \parenthesize cs'16 \bar":|.|:" | \break
-            \repeat volta 2 {
+            f d16 e8. c16 d d'8. d bf16 | \tuplet 3/2 { a8 bf a } \tuplet 3/2 { g f e } f16 d8. d8. \parenthesize cs'16 | \break
                 d4 f8. e16 d8. a'16 f d8. | c4 g8. a16 e c8. c a'16 |
                 d4 f8. e16 \tuplet 3/2 { d8 f a } \tuplet 3/2 { f e d } |
                 \tuplet 3/2 { a' bf a } \tuplet 3/2 { e f g } \tuplet 3/2 { f e d } \tuplet 3/2 { e d cs } |
@@ -58,7 +58,7 @@
 
             \alternative {
                 { \tuplet 3/2 { a bf a } \tuplet 3/2 { g f e } \tuplet 3/2 { f e d } \tuplet 3/2 { e d c } }
-                { \tuplet 3/2 { a' bf a } \tuplet 3/2 { g f e } f16 d8. d4 }
+                { \tuplet 3/2 { a' bf a } \tuplet 3/2 { g f e } f16 d8. d4 \bar"||"}
             }
         }
 
