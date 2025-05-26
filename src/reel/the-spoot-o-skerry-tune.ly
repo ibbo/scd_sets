@@ -50,7 +50,7 @@
         e'8 fs | g4 e8 d e d b4 | b8 a b g e4 d8 e | g a b d e g e d | b4 a a |
         }
         \alternative {
-            { e'8 fs | g4 e8 d e d b4 | b8 a b g e4 d8 e | g a b d e g e d | b4 g g \bar":|." }
+            { e'8 fs | g4 e8 d e d b4 | b8 a b g e4 d8 e | \break g a b d e g e d | b4 g g \bar":|." }
             { d8 e | g4 d8 e g d e g | d e g a b4 a8 b | g'4 e8 d e d b a | b4 g g \bar "|." }
         }
       }

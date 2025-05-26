@@ -43,7 +43,7 @@
         \clef treble
         \key e \minor
         \time 6/8
-        \partial 4 d cs |
+        \partial 4 d8 cs |
         b4 e,8 e fs e | b' a b d4 b8 | a4 d,8 d e d | fs d fs a d cs | \break
         b4 e,8 e fs e | b' a b d4 e8 | d b d a fs d | e fs e e4 \bar":|." \break
         b'8 | e fs e e d b | e fs g g fs e | d e d d a fs | d' cs d fs e d | \break
